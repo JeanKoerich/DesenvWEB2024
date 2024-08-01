@@ -4,55 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .radio-group label {
+            margin-right: 10px;
+            font-weight: normal;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <style>
-
-    </style>
-
-    <select name="" id="">
+    <div class="container">
         <h1>Cadastre-se</h1>
-
         <form action="">
-            <label for="">Nome</label>
-            <input type="text" name="nNome" id="idNome" max="50">
+            <label for="idNome">Nome</label>
+            <input type="text" name="nNome" id="idNome" maxlength="50">
 
-            <label for="">Telefone</label>
+            <label for="idTelefone">Telefone</label>
             <input type="tel" name="nTelefone" id="idTelefone">
 
-            <label for="">E-mail</label>
-            <input type="email" name="nEmail" id="idEmail" max="30">
+            <label for="idEmail">E-mail</label>
+            <input type="email" name="nEmail" id="idEmail" maxlength="30">
 
-            <label for="">Tipo Pessoa</label>
-            <input type="radio" name="nFisica" id="idFisica">
-            <label for="nFisica">Fisica</label>
-            <input type="radio" name="nJuridica" id="idJuridica">
-            <label for="nJuridica">Juridica</label>
+            <label>Tipo Pessoa</label>
+            <div class="radio-group">
+                <input type="radio" name="tipoPessoa" id="idFisica" value="fisica">
+                <label for="idFisica">Fisica</label>
+                <input type="radio" name="tipoPessoa" id="idJuridica" value="juridica">
+                <label for="idJuridica">Juridica</label>
+            </div>
 
-            <label for="">Endereço</label>
-            <input type="text" name="nEndereco" id="idEndereco" max="50">
+            <label for="idEndereco">Endereço</label>
+            <input type="text" name="nEndereco" id="idEndereco" maxlength="50">
 
-            <label for="">UF</label>
+            <label for="idUF">UF</label>
             <select name="nUF" id="idUF">
-                <option value="">RO</option>
-                <option value="">AC</option>
-                <option value="">AM</option>
-                <option value="">RR</option>
-                <option value="">PA</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-
-            </select>
-
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>            
+            <button type="submit">Enviar</button>
         </form>
-
-    </select>
+    </div>
 </body>
 </html>
