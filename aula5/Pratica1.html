@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 1 - Calculadora</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculadora {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 320px;
+        }
+        input {
+            width: 120px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 70px;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 24px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            min-height: 50px;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <ul>
+            <li>
+                <label for="valor1">Valor 1:</label>
+                <input type="number" id="valor1">
+            </li>
+            <li>
+                <label for="valor2">Valor 2:</label>
+                <input type="number" id="valor2">
+            </li>
+        </ul>
+        <ul>
+            <button onclick="calcular('soma')">Soma</button>
+            <button onclick="calcular('subtracao')">Subtrai</button>
+            <button onclick="calcular('multiplicacao')">Multiplica</button>
+            <button onclick="calcular('divisao')">Dividi</button>
+        </ul>
+        <ul>
+            <div id="resultado"></div>
+        </ul>
+    </div>
+
+    <script src="Pratica1.js"></script>
+
+</body>
+</html>
