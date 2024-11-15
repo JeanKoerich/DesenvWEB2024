@@ -1,3 +1,6 @@
+/* Arquivo: respostas.sql */
+/* Página para criar Tabela de respostas */
+
 CREATE TABLE respostas (
     id SERIAL PRIMARY KEY,
     pergunta_id INTEGER NOT NULL,
