@@ -12,7 +12,7 @@ Este projeto é um sistema de feedback desenvolvido para o Hospital Regional Alt
 
 ### **Passos para a configuração**
 
-####**Arquivos**
+#### **Arquivos**
 1. Clonar a pasta HRAV
 
 ---
