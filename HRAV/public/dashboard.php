@@ -1,4 +1,7 @@
 <?php
+// Arquivo Dashboard criado somente para visualização das respostas
+
+
 // Inclui a conexão com o banco de dados
 include '../src/database.php';
 
