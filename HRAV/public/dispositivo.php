@@ -1,3 +1,6 @@
+<!-- Arquivo: dispositivo.php -->
+<!--Página de seleção de dispositivos -->
+
 <?php
 // Inclui a conexão com o banco de dados
 include '../src/database.php';
