@@ -1,4 +1,4 @@
-// timer.js - Lógica para o timer de redirecionamento
+// Arquivo: timer.js
 
 // Define o tempo para redirecionamento em milissegundos (5 segundos)
 var tempoRestante = 5;
